@@ -12,6 +12,7 @@
 /storage/cache/*
 /storage/public/*
 /storage/dump/*
+/themes/*
 /public/storage
 /.env
 /setting.json
