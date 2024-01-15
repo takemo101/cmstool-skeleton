@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b27b461d6d934c1a8501eb83f655248e",
+    "content-hash": "01e009aa7ff0e6a741a41ea12efc53cb",
     "packages": [
         {
             "name": "eventsauce/object-hydrator",
@@ -4375,16 +4375,16 @@
         },
         {
             "name": "takemo101/cms-tool",
-            "version": "dev-master",
+            "version": "v0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/takemo101/cms-tool.git",
-                "reference": "01d5280dfc8c28e7f2404b7ee6e9ece5dd21267c"
+                "reference": "7b0b8eee71781772f27af18d21f8a0c7217f366d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/01d5280dfc8c28e7f2404b7ee6e9ece5dd21267c",
-                "reference": "01d5280dfc8c28e7f2404b7ee6e9ece5dd21267c",
+                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/7b0b8eee71781772f27af18d21f8a0c7217f366d",
+                "reference": "7b0b8eee71781772f27af18d21f8a0c7217f366d",
                 "shasum": ""
             },
             "require": {
@@ -4419,7 +4419,6 @@
                 "phpstan/phpstan": "^1.10",
                 "symfony/var-dumper": "^6.4|^7.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -4451,9 +4450,9 @@
             ],
             "support": {
                 "issues": "https://github.com/takemo101/cms-tool/issues",
-                "source": "https://github.com/takemo101/cms-tool/tree/master"
+                "source": "https://github.com/takemo101/cms-tool/tree/v0.0.1"
             },
-            "time": "2024-01-15T07:05:08+00:00"
+            "time": "2024-01-15T09:31:36+00:00"
         },
         {
             "name": "twig/twig",
@@ -4615,14 +4614,11 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "takemo101/cms-tool": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2",
-        "ext-json": "*"
+        "php": "^8.2"
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
