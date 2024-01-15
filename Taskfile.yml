@@ -1,0 +1,36 @@
+version: '3'
+
+tasks:
+  setup:
+    cmds:
+      - cp .example.env .env
+
+  # ex: task composer -- install
+  composer:
+    cmds:
+      - docker-compose run --rm composer {{default "--version" .CLI_ARGS}}
+
+  pkg-update:
+    cmds:
+      - docker-compose run --rm composer remove takemo101/cms-tool
+      - docker-compose run --rm composer require takemo101/cms-tool
+
+  start:
+    cmds:
+      - docker-compose up -d cmstool-app
+
+  shell:
+    cmds:
+      - docker-compose exec cmstool-app bash
+
+  stop:
+    cmds:
+      - docker-compose stop cmstool-app
+
+  ngrok-start:
+    cmds:
+      - docker-compose up -d ngrok
+
+  ngrok-stop:
+    cmds:
+      - docker-compose stop ngrok

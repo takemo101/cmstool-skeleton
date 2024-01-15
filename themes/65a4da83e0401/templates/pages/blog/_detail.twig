@@ -1,0 +1,70 @@
+{% extends 'layouts.master' %}
+
+{% block title %}{{ content.title }}{% endblock %}
+
+{% block content %}
+    <section class="bg-gray-100 text-black">
+        <div class="section-narrow-layout">
+            <div class="flex items-center md:justify-start mb-12 text-xs md:text-sm leading-6 -tracking-[0.3px] lg:tracking-normal">
+                <a href="{{ route('home') }}" class="text-gray-750 hover:opacity-60">
+                    Home
+                </a>
+                {% if content.category %}
+                    <i class="fas fa-chevron-right mx-[7px]" aria-hidden="true"></i>
+                    <a
+                        href="{{ route('blog.category', {
+                            id: content.category.id,
+                        }) }}"
+                        class="text-gray-750 hover:opacity-60">
+                        {{ content.category.name }}
+                    </a>
+                {% endif %}
+                <i class="fas fa-chevron-right text-gray-750 mx-[7px]" aria-hidden="true"></i>
+                <span class="text-black">{{ content.title }}</span>
+            </div>
+
+            <div class="mx-auto max-w-2xl text-center mb-12">
+                <p class="text-sm text-gray-500 mb-4">
+                    {% if isDraft %}
+                        （下書き中）
+                    {% else %}
+                        <i class="far fa-clock"></i>
+                        {{ content.publishedAt|date('Y.m.d') }}
+                    {% endif %}
+                </p>
+                <h1 class="sm:text-2xl text-xl text-gray-900">
+                    {{ content.title }}
+                </h1>
+            </div>
+
+            <article class="mx-auto w-full border border-gray-200">
+                {% if content.eyecatch %}
+                    <img src="{{ content.eyecatch.url }}" class="w-full">
+                {% endif %}
+                <div class="overflow-hidden sm:p-12 p-6 bg-white">
+                    <div class="prose">
+                        {{ content.content|raw }}
+                    </div>
+
+                    {% if content.tags|length %}
+                        <div class="tag mt-8">
+                            {% for tag in content.tags %}
+                                <a
+                                    href="{{ route('blog.tag', {
+                                        id: tag.id
+                                    }) }}"
+                                    class="tag-label hover:opacity-60">
+                                    {{ tag.name }}
+                                </a>
+                            {% else %}
+                                <p>タグはありません</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+{% endblock %}

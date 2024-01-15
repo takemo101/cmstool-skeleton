@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ config('app.locale') }}">
+    <head>
+        {% set metaTitle = block('title') is defined ? block('title') : share.meta.seo.title %}
+        {% set metaDescription = block('description') is defined ? block('description') : share.meta.seo.description %}
+        {% set metaIcon = block('image') is defined ? block('image') : storage(share.meta.seo.icon) %}
+
+        {# meta tag #}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="{{ metaDescription }}">
+        <meta name="robots" content="noindex">
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="{{ metaTitle }}" />
+        <meta property="og:description" content="{{ metaDescription }}" />
+        <meta property="og:site_name" content="{{ config('app.name') }}" />
+        {% if metaIcon %}
+            <meta property="og:image" content="{{ metaIcon }}" />
+        {% endif %}
+
+        {% if share.meta.seo.favicon %}
+            <link rel="icon" href="{{ storage(share.meta.seo.favicon) }}">
+        {% endif %}
+
+        <title>{{ metaTitle }}{% block title_separator %}｜{% endblock %}{% block title_suffix %}{{ share.meta.name }}{% endblock %}</title>
+
+        {# css #}
+        {% block css %}{% endblock %}
+        <link rel="stylesheet" href="{{ asset('app.css') }}">
+
+        {# header js #}
+        {% block header_js %}{% endblock %}
+        <script src="//kit.fontawesome.com/849ec56e4d.js" defer crossorigin="anonymous"></script>
+        <script src="{{ asset('app.js') }}"></script>
+    </head>
+    <body
+        class="flex flex-col h-full {% block body_class %}{% endblock %}">
+
+        {# header #}
+        {% block header %}{% endblock %}
+
+        <main class="bg-gray-100">
+            {# main content #}
+            {% block content %}{% endblock %}
+        </main>
+
+        {# footer #}
+        {% include 'components.footer' %}
+
+        {# footer js #}
+        {% block footer_js %}{% endblock %}
+    </body>
+</html>

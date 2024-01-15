@@ -1,0 +1,56 @@
+<div class="mx-auto grid grid-cols-1 gap-6 text-sm md:gap-y-10 lg:max-w-none">
+    {% for content in contents %}
+        <article class="border border-gray-200 bg-white
+            flex flex-col sm:flex-row sm:items-stretch">
+            <div class="relative">
+                <a
+                    href="{{ route('blog.detail', {id: content.id}) }}"
+                    class="hover:opacity-60">
+                    {% if content.category %}
+                        <span class="py-2 px-6 bg-white
+                            absolute top-2 right-2
+                            text-black text-sm">
+                            {{ content.category.name }}
+                        </span>
+                    {% endif %}
+                    <img
+                        alt="{{ content.title }}"
+                        class="object-cover
+                            xl:w-[280px] sm:w-[200px] w-full
+                            xl:h-[280px] sm:h-[200px] h-full"
+                        src="{{ content.eyecatch ? content.eyecatch.url : asset('empty.jpeg') }}" />
+                </a>
+            </div>
+            <div class="flex items-center">
+                <div class="sm:ml-8 p-4 sm:p-0">
+                    <div class="mb-4">
+                        <a
+                        href="{{ route('blog.detail', {id: content.id}) }}"
+                        class="hover:opacity-60">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                {{ content.title }}
+                            </h3>
+                        </a>
+                    </div>
+                    {% if content.tags|length %}
+                        <div class="tag mb-4">
+                            {% for tag in content.tags %}
+                                <a
+                                    href="{{ route('blog.tag', {id: tag.id}) }}"
+                                    class="tag-label hover:opacity-60">
+                                    {{ tag.name }}
+                                </a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    <p class="text-sm text-gray-500">
+                        <i class="far fa-clock"></i>
+                        {{ content.publishedAt|date('Y.m.d') }}
+                    </p>
+                </div>
+            </div>
+        </article>
+    {% else %}
+        <p>記事はありません</p>
+    {% endfor %}
+</div>

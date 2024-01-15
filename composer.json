@@ -1,0 +1,39 @@
+{
+    "name": "takemo101/cmstool-ekeleton",
+    "description": "This is Chubby's CMS tool skeleton.",
+    "type": "project",
+    "keywords": [
+        "php",
+        "slim",
+        "chubby",
+        "framework"
+    ],
+    "authors": [
+        {
+            "name": "takemo101",
+            "email": "takemo101@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/takemo101/cmstool-skeleton",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "takemo101/cms-tool": "dev-master"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.4|^7.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

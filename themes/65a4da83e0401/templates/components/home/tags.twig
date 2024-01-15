@@ -1,0 +1,21 @@
+<div class="section-layout">
+    <div class="section-header mb-8">
+        <h3 class="section-header__title">
+            TAG
+        </h3>
+        <span class="section-header__subtitle">タグ</span>
+    </div>
+    <div class="tag">
+        {% for tag in share.tags %}
+            <a
+                href="{{ route('blog.tag', {
+                    id: tag.id
+                }) }}"
+                class="tag-label hover:opacity-60">
+                {{ tag.name }}
+            </a>
+        {% else %}
+            <p>タグはありません</p>
+        {% endfor %}
+    </div>
+</div>

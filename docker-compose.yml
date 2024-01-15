@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  cmstool-app:
+    build:
+      context: './docker/apache'
+      args:
+        uid: ${UID:-1000}
+    environment:
+      - APACHE_RUN_USER=#${UID:-1000}
+      - APACHE_RUN_GROUP=#${UID:-1000}
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80
+    restart: always
+    networks:
+      - cmstool
+
+  composer:
+    image: composer:2.6.5
+    volumes:
+      - .:/var/www/html
+    environment:
+      - PHP_VERSION=8.2.11
+    working_dir: /var/www/html
+
+  ngrok:
+    image: 'wernight/ngrok:latest'
+    ports:
+      - ${NGROK_PORT:-4040}:4040
+    environment:
+      NGROK_AUTH: ${NGROK_AUTH_TOKEN}
+      NGROK_PROTOCOL: ${NGROK_PROTOCOL}
+      NGROK_PORT: cmstool-app:80
+    networks:
+      - cmstool
+
+networks:
+  cmstool:
+    driver: bridge

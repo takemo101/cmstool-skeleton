@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+define('APP_START_TIME', microtime(true));
+
+use Takemo101\Chubby\Application;
+use Takemo101\Chubby\Console;
+
+require __DIR__ . '/vendor/autoload.php';
+
+/** @var Application */
+$app = require __DIR__ . '/setting/bootstrap.php';
+
+$console = new Console($app);
+
+$console->run();
