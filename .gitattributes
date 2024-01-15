@@ -8,4 +8,5 @@ phpunit.xml.dist.bak    export-ignore
 README.md               export-ignore
 Taskfile.yml            export-ignore
 docker-compose.yaml     export-ignore
+docker-compose.yml      export-ignore
 pint.json               export-ignore
