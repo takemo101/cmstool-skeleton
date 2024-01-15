@@ -21,7 +21,7 @@
 ### 1. プロジェクトの作成
 
 ```bash
-$ composer create-project --prefer-dist takemo101/cmstool-skeleton cms-tool
+$ composer create-project takemo101/cmstool-skeleton cms-tool
 ```
 
 > composer がインストールされていない場合は、[こちら](https://getcomposer.org/download/)からインストールしてください。
