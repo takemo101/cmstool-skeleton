@@ -16,9 +16,11 @@
 | PHP  |            8.2 以上             |
 |  OS  | MacOS, Linux （Windows 未対応） |
 
-## インストール
+## インストール（composer create-project）
 
-### 1. プロジェクトの作成
+以下は`composer create-project`コマンドを使用して、プロジェクトを作成する方法です。
+
+#### 1. プロジェクトの作成
 
 ```bash
 $ composer create-project takemo101/cmstool-skeleton cms-tool
@@ -26,13 +28,13 @@ $ composer create-project takemo101/cmstool-skeleton cms-tool
 
 > composer がインストールされていない場合は、[こちら](https://getcomposer.org/download/)からインストールしてください。
 
-### 2. プロジェクトのディレクトリに移動
+#### 2. プロジェクトのディレクトリに移動
 
 ```bash
 $ cd cms-tool
 ```
 
-### 3. プロジェクトのセットアップ
+#### 3. プロジェクトのセットアップ
 
 `console` コマンドを使用して、プロジェクトのセットアップを行います。
 
@@ -47,7 +49,7 @@ $ php console generate:key
 $ php console storage:link
 ```
 
-### 4. プロジェクトの起動
+#### 4. プロジェクトの起動
 
 docker を使用して、apache や nginx などの環境を構築する場合は、ドキュメントルートを`/public`に設定してください。
 
@@ -67,16 +69,30 @@ SERVER_HOST=ホスト名
 SERVER_SCRIPT=/public/index.php # ドキュメントルート
 ```
 
-### 5. インストールに必要なもの
+#### 5. インストールに必要なもの
 
 MicroCMS の API キーとサービス ID が必要になります。
 
-### 6. インストール後の設定
+#### 6. インストール後の設定
 
 インストール作業を完了すると、管理画面にログインすることが出来ます。  
 管理画面からは、SEO・外観テーマ・公開/非公開・アカウント・API の設定などを行うことが出来ます。
 
 サイトの公開設定については、インストール直後は非公開になっていますので、公開する場合は管理画面ダッシュボードの「公開する」ボタンから公開を行ってください。
+
+## インストール（microCMS テンプレート）
+
+以下は、microCMS テンプレートを使用して、プロジェクトを作成する方法です。
+
+作成されたプロジェクトのディレクトリに移動して、以下のコマンドを実行して必要なパッケージをインストールしてください。
+
+```bash
+$ composer install
+```
+
+> composer がインストールされていない場合は、[こちら](https://getcomposer.org/download/)からインストールしてください。
+
+パッケージをインストールしたら、上記のインストール手順の 3. 以降の手順を実行してください。
 
 ## テーマについて
 
