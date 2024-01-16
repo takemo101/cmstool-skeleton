@@ -118,3 +118,11 @@ $ php console cache:clean
 キャッシュは、有効期限が切れた場合に自動的に削除されますが、Webhook を設定している場合は、Webhook が実行されたタイミングでキャッシュが削除されます。
 
 > Webhook については、管理画面に記載されている URL をヘッドレス CMS の Webhook 設定に登録してください。
+
+## アップデートについて
+
+このプロジェクトでは、`takemo101/cms-tool`というパッケージを利用しており、以下の composer コマンドでパッケージをアップデートすることが出来ます。
+
+```bash
+composer update takemo101/cms-tool
+```
