@@ -124,5 +124,5 @@ $ php console cache:clean
 このプロジェクトでは、`takemo101/cms-tool`というパッケージを利用しており、以下の composer コマンドでパッケージをアップデートすることが出来ます。
 
 ```bash
-composer update takemo101/cms-tool
+$ composer update takemo101/cms-tool
 ```
