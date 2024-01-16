@@ -12,7 +12,6 @@ tasks:
 
   pkg-update:
     cmds:
-      - docker-compose run --rm composer remove takemo101/cms-tool
       - docker-compose run --rm composer require takemo101/cms-tool
 
   start:
