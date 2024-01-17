@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "724ab86976289e2e34b8e347da8777d9",
+    "content-hash": "aa19e79e343dbd100360077a04c7616d",
     "packages": [
         {
             "name": "eventsauce/object-hydrator",
@@ -4129,16 +4129,16 @@
         },
         {
             "name": "takemo101/cms-tool",
-            "version": "v0.0.2",
+            "version": "v0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/takemo101/cms-tool.git",
-                "reference": "8b6a74730d764b82d817362f2cc78f4971422823"
+                "reference": "3b5c94d543a25e32020001d1efe0960e797d4c1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/8b6a74730d764b82d817362f2cc78f4971422823",
-                "reference": "8b6a74730d764b82d817362f2cc78f4971422823",
+                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/3b5c94d543a25e32020001d1efe0960e797d4c1a",
+                "reference": "3b5c94d543a25e32020001d1efe0960e797d4c1a",
                 "shasum": ""
             },
             "require": {
@@ -4205,9 +4205,9 @@
             ],
             "support": {
                 "issues": "https://github.com/takemo101/cms-tool/issues",
-                "source": "https://github.com/takemo101/cms-tool/tree/v0.0.2"
+                "source": "https://github.com/takemo101/cms-tool/tree/v0.0.3"
             },
-            "time": "2024-01-17T05:25:21+00:00"
+            "time": "2024-01-17T12:33:54+00:00"
         },
         {
             "name": "tedivm/stash",
