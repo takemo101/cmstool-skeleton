@@ -1,7 +1,6 @@
 <?php
 
 use GuzzleHttp\RequestOptions;
-use Takemo101\CmsTool\Support\Webhook\CacheCleanWebhookHandler;
 
 // CMSTOOL system unique configuration
 
@@ -23,7 +22,7 @@ return [
 
         // WebhookHandler implementation class name
         'handlers' => [
-            CacheCleanWebhookHandler::class,
+            //
         ],
     ],
 
