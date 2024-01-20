@@ -135,9 +135,9 @@ $ php console cache:clean
 $ composer update takemo101/cms-tool
 ```
 
-## `.env`の設定内容について
+## `.env`の設定
 
-`.env`のシステムに関する設定内容については、以下の通りです。
+`.env`では、以下の設定を行うことが出来ます。
 
 ```dotenv
 ### for app ###
