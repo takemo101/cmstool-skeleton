@@ -7,7 +7,7 @@
 
 ## サポートしているヘッドレス CMS
 
-現在は MicroCMS のみサポートしています。
+現在は microCMS のみサポートしています。
 
 ## 必須環境
 
@@ -49,6 +49,13 @@ $ php console generate:key
 $ php console storage:link
 ```
 
+`php console generate:key`コマンドを実行すると、`.env`ファイルの`APP_KEY`に自動生成された暗号キーが設定されます。
+ただし、自身で暗号キーを設定したい場合は、以下のように`.env`ファイルの`APP_KEY`に暗号キーを設定してください。
+
+```dotenv
+APP_KEY=自身で設定した暗号キー
+```
+
 #### 4. プロジェクトの起動
 
 docker を使用して、apache や nginx などの環境を構築する場合は、ドキュメントルートを`/public`に設定してください。
@@ -71,11 +78,11 @@ SERVER_SCRIPT=/public/index.php # ドキュメントルート
 
 #### 5. インストールに必要なもの
 
-MicroCMS の API キーとサービス ID が必要になります。
+microCMS の API キーとサービス ID が必要になります。
 
 #### 6. インストール後の設定
 
-インストール作業を完了すると、`http://localhost:8080/system/login`から管理画面にログインすることが出来ます。  
+インストール作業を完了すると、`http://localhost:8080/system/login`から管理画面にログインすることが出来ます。
 
 管理画面からは、SEO・外観テーマ・公開/非公開・アカウント・API の設定などを行うことが出来ます。
 
@@ -94,7 +101,6 @@ $ composer install
 > composer がインストールされていない場合は、[こちら](https://getcomposer.org/download/)からインストールしてください。
 
 パッケージをインストールしたら、上記のインストール手順の 3. 以降の手順を実行してください。
-
 
 ## テーマについて
 
@@ -127,4 +133,38 @@ $ php console cache:clean
 
 ```bash
 $ composer update takemo101/cms-tool
+```
+
+## `.env`の設定内容について
+
+`.env`のシステムに関する設定内容については、以下の通りです。
+
+```dotenv
+### for app ###
+# 管理画面で表示されるアプリケーションの名前です。
+APP_NAME=アプリケーションの名前
+
+# アプリケーションの環境モードで local, development, production が設定できます（localでも問題ありません）
+APP_ENV=local
+
+# アプリケーションのデバッグモードで true にすると、エラーが発生した場合にエラー内容が表示されます。
+APP_DEBUG=true
+
+# アプリケーションの暗号キーで、パスワードのハッシュ化・暗号化などに使用されます。
+APP_KEY=暗号キー
+
+# アプリケーションの URL で、末尾のスラッシュは不要です。
+# ページを表示する場合は、自動的にURLが設定されますが
+# サーバーなどのバックグラウンドで実行する場合は、自動的にURLが設定されないので、このURLが使用されます。
+APP_URL=http://localhost:8080
+
+# APIのアクセスでTLSを使用する場合はtrueに設定してください。
+GUZZLE_TLS_OPTION=true
+
+# キャッシュを有効にする場合はtrueに設定してください。
+# もしも、テーマの作成などを行っている場合は、キャッシュを無効にすると良いです。
+CACHE_ENABLED=true
+
+# キャッシュの有効期限を秒で設定します。
+CACHE_LIFETIME=86400
 ```
