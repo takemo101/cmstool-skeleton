@@ -39,8 +39,8 @@ $ cd cms-tool
 `console` コマンドを使用して、プロジェクトのセットアップを行います。
 
 ```bash
-# 環境変数設定のため、.env.example を .env にコピー
-$ cp .env.example .env
+# 環境変数設定のため、.example.env を .env にコピー
+$ cp .example.env .env
 
 # .env の APP_KEY に割り当てる暗号キーの生成
 $ php console generate:key
