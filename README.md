@@ -161,6 +161,9 @@ APP_URL=http://localhost:8080
 # APIのアクセスでTLSを使用する場合はtrueに設定してください。
 GUZZLE_TLS_OPTION=true
 
+# 管理画面のアクセスする場合などに利用するセッションの有効期限を秒で設定します。
+SESSION_LIFETIME=21600
+
 # キャッシュを有効にする場合はtrueに設定してください。
 # もしも、テーマの作成などを行っている場合は、キャッシュを無効にすると良いです。
 CACHE_ENABLED=true
