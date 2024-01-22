@@ -13,6 +13,7 @@
 /storage/public/*
 /storage/dump/*
 /public/storage
+/public/robots.txt
 /.env
 /setting.json
 
