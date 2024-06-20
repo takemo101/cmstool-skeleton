@@ -12,6 +12,7 @@ tasks:
 
   pkg-update:
     cmds:
+      - docker-compose run --rm composer remove takemo101/cms-tool
       - docker-compose run --rm composer require takemo101/cms-tool
 
   start:
@@ -25,6 +26,11 @@ tasks:
   stop:
     cmds:
       - docker-compose stop cmstool-app
+
+  # ex: task serve PORT=8000 ROOT=./public/index.php
+  serve:
+    cmds:
+      - php -S {{default "localhost" .HOST}}:{{default "8080" .PORT}} {{default "./public/index.php" .ROOT}}
 
   ngrok-start:
     cmds:
