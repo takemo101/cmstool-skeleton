@@ -35,4 +35,11 @@ return [
             : null,
         RequestOptions::TIMEOUT => 60, // default: 30
     ],
+
+    // Settings for robots.txt
+    'robots_txt' => [
+
+        // Path to robots.txt
+        'path' => base_path('public', 'robots.txt'),
+    ]
 ];

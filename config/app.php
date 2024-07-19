@@ -1,6 +1,8 @@
 <?php
 
-// Application basic settings
+// Application basic configuration
+
+use Takemo101\Chubby\Console\Command\ServeCommand;
 
 return [
     // Application base url
@@ -22,5 +24,5 @@ return [
     'locale' => 'ja',
 
     // Built-in server flag
-    'built_in_server' => (bool) env('BUILT_IN_SERVER', false),
+    'built_in_server' => (bool) env(ServeCommand::BuiltInServerEnvironment, false),
 ];

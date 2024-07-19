@@ -1,5 +1,7 @@
 <?php
 
+// Storage configuration
+
 return [
     // Settings to open the storage externally
     'public' => [
