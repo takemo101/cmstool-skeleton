@@ -12,6 +12,7 @@
 /storage/cache/*
 /storage/public/*
 /storage/dump/*
+/storage/themes/*
 /public/storage
 /public/robots.txt
 /.env
