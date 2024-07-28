@@ -24,5 +24,8 @@ return [
     'locale' => 'ja',
 
     // Built-in server flag
-    'built_in_server' => (bool) env(ServeCommand::BuiltInServerEnvironment, false),
+    'built_in_server' => (bool) env(
+        ServeCommand::BuiltInServerEnvironment,
+        php_sapi_name() === 'cli-server', // 「BUILT_IN_SERVER」環境変数が設定されていなければ、built-in serverが稼働しているかどうかを判定する
+    ),
 ];
