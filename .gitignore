@@ -13,6 +13,7 @@
 /storage/public/*
 /storage/dump/*
 /storage/themes/*
+/storage/access/*
 /public/storage
 /public/robots.txt
 /.env
