@@ -41,5 +41,21 @@ return [
 
         // Path to robots.txt
         'path' => base_path('public', 'robots.txt'),
-    ]
+    ],
+
+    // Basic authentication settings
+    'basic_auth' => [
+
+        // Enable default Basic authentication flag
+        'enabled' => (bool) env('BASIC_AUTH_ENABLED', false),
+
+        // Basic authentication realm name
+        'realm' => 'Admin',
+
+        // Default username and password for enabling Basic authentication
+        'users' => [
+            // 'username' => 'hashed password'
+            env('BASIC_AUTH_USERNAME', 'admin') => env('BASIC_AUTH_PASSWORD', 'admin'),
+        ],
+    ],
 ];
