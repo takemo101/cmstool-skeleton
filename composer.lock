@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "195e73c0dee87d09575cc4abf9c765fd",
+    "content-hash": "82fb314beb8f1d36f65eb9c5105cfaef",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -83,16 +83,16 @@
         },
         {
             "name": "eventsauce/object-hydrator",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EventSaucePHP/ObjectHydrator.git",
-                "reference": "743ee4524d1a3d7b381ef9f61afcb18e0cc81cb0"
+                "reference": "abbe6d2ccde8d5c6bbb92311ccf136133985a056"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EventSaucePHP/ObjectHydrator/zipball/743ee4524d1a3d7b381ef9f61afcb18e0cc81cb0",
-                "reference": "743ee4524d1a3d7b381ef9f61afcb18e0cc81cb0",
+                "url": "https://api.github.com/repos/EventSaucePHP/ObjectHydrator/zipball/abbe6d2ccde8d5c6bbb92311ccf136133985a056",
+                "reference": "abbe6d2ccde8d5c6bbb92311ccf136133985a056",
                 "shasum": ""
             },
             "require": {
@@ -135,7 +135,7 @@
             ],
             "support": {
                 "issues": "https://github.com/EventSaucePHP/ObjectHydrator/issues",
-                "source": "https://github.com/EventSaucePHP/ObjectHydrator/tree/1.4.0"
+                "source": "https://github.com/EventSaucePHP/ObjectHydrator/tree/1.5.0"
             },
             "funding": [
                 {
@@ -143,7 +143,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-03T07:27:58+00:00"
+            "time": "2024-08-17T12:23:19+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -846,16 +846,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.5.1",
+            "version": "2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "ac815920de0eff6de947eac0a6a94e5ed0fb147c"
+                "reference": "b650144166dfa7703e62a22e493b853b58d874b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/ac815920de0eff6de947eac0a6a94e5ed0fb147c",
-                "reference": "ac815920de0eff6de947eac0a6a94e5ed0fb147c",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/b650144166dfa7703e62a22e493b853b58d874b0",
+                "reference": "b650144166dfa7703e62a22e493b853b58d874b0",
                 "shasum": ""
             },
             "require": {
@@ -868,8 +868,8 @@
             },
             "require-dev": {
                 "cebe/markdown": "^1.0",
-                "commonmark/cmark": "0.31.0",
-                "commonmark/commonmark.js": "0.31.0",
+                "commonmark/cmark": "0.31.1",
+                "commonmark/commonmark.js": "0.31.1",
                 "composer/package-versions-deprecated": "^1.8",
                 "embed/embed": "^4.4",
                 "erusev/parsedown": "^1.0",
@@ -948,7 +948,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-24T12:52:09+00:00"
+            "time": "2024-08-16T11:46:16+00:00"
         },
         {
             "name": "league/config",
@@ -1782,6 +1782,54 @@
             "time": "2016-08-06T20:24:11+00:00"
         },
         {
+            "name": "psr/clock",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/clock.git",
+                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/clock/zipball/e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Clock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for reading the clock.",
+            "homepage": "https://github.com/php-fig/clock",
+            "keywords": [
+                "clock",
+                "now",
+                "psr",
+                "psr-20",
+                "time"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/clock/issues",
+                "source": "https://github.com/php-fig/clock/tree/1.0.0"
+            },
+            "time": "2022-11-25T14:36:26+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "2.0.2",
             "source": {
@@ -2159,16 +2207,16 @@
         },
         {
             "name": "psr/log",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+                "reference": "79dff0b268932c640297f5208d6298f71855c03e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/79dff0b268932c640297f5208d6298f71855c03e",
+                "reference": "79dff0b268932c640297f5208d6298f71855c03e",
                 "shasum": ""
             },
             "require": {
@@ -2203,9 +2251,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.0"
+                "source": "https://github.com/php-fig/log/tree/3.0.1"
             },
-            "time": "2021-07-14T16:46:02+00:00"
+            "time": "2024-08-21T13:31:24+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -4691,16 +4739,16 @@
         },
         {
             "name": "takemo101/chubby",
-            "version": "v0.1.7",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/takemo101/chubby.git",
-                "reference": "75e835a5f429bbca2f56470733303d8e0071c527"
+                "reference": "9f780aff4774608363c0cd79db00f00de0558058"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/takemo101/chubby/zipball/75e835a5f429bbca2f56470733303d8e0071c527",
-                "reference": "75e835a5f429bbca2f56470733303d8e0071c527",
+                "url": "https://api.github.com/repos/takemo101/chubby/zipball/9f780aff4774608363c0cd79db00f00de0558058",
+                "reference": "9f780aff4774608363c0cd79db00f00de0558058",
                 "shasum": ""
             },
             "require": {
@@ -4712,6 +4760,7 @@
                 "php": "^8.2",
                 "php-di/invoker": "^2.3",
                 "php-di/php-di": "^7.0",
+                "psr/clock": "^1.0",
                 "psr/event-dispatcher": "^1.0",
                 "slim/slim": "4.*",
                 "symfony/console": "^6.4|^7.0",
@@ -4754,22 +4803,22 @@
             ],
             "support": {
                 "issues": "https://github.com/takemo101/chubby/issues",
-                "source": "https://github.com/takemo101/chubby/tree/v0.1.7"
+                "source": "https://github.com/takemo101/chubby/tree/v0.1.8"
             },
-            "time": "2024-07-08T08:29:19+00:00"
+            "time": "2024-08-22T06:09:35+00:00"
         },
         {
             "name": "takemo101/cms-tool",
-            "version": "v0.1.4",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/takemo101/cms-tool.git",
-                "reference": "9645b19ec795cb151d80681ca3a226e7eed8d130"
+                "reference": "ddc765c63ca7303bdb4ad21de8a7f7196f87ecc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/9645b19ec795cb151d80681ca3a226e7eed8d130",
-                "reference": "9645b19ec795cb151d80681ca3a226e7eed8d130",
+                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/ddc765c63ca7303bdb4ad21de8a7f7196f87ecc6",
+                "reference": "ddc765c63ca7303bdb4ad21de8a7f7196f87ecc6",
                 "shasum": ""
             },
             "require": {
@@ -4788,7 +4837,7 @@
                 "symfony/property-access": "^6.4|^7.0",
                 "symfony/string": "^6.4|^7.0",
                 "symfony/validator": "^6.4|^7.0",
-                "takemo101/chubby": "^0.1.7",
+                "takemo101/chubby": "^0.1.8",
                 "tedivm/stash": "^0.17.6",
                 "twig/twig": "^3.8"
             },
@@ -4837,9 +4886,9 @@
             ],
             "support": {
                 "issues": "https://github.com/takemo101/cms-tool/issues",
-                "source": "https://github.com/takemo101/cms-tool/tree/v0.1.4"
+                "source": "https://github.com/takemo101/cms-tool/tree/v0.1.5"
             },
-            "time": "2024-08-13T12:42:36+00:00"
+            "time": "2024-08-26T08:09:55+00:00"
         },
         {
             "name": "tedivm/stash",
