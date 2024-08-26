@@ -4813,12 +4813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/takemo101/cms-tool.git",
-                "reference": "ddc765c63ca7303bdb4ad21de8a7f7196f87ecc6"
+                "reference": "8620eb3225cd5fe8a67a5c3417f73433dbfb52ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/ddc765c63ca7303bdb4ad21de8a7f7196f87ecc6",
-                "reference": "ddc765c63ca7303bdb4ad21de8a7f7196f87ecc6",
+                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/8620eb3225cd5fe8a67a5c3417f73433dbfb52ee",
+                "reference": "8620eb3225cd5fe8a67a5c3417f73433dbfb52ee",
                 "shasum": ""
             },
             "require": {
@@ -4888,7 +4888,7 @@
                 "issues": "https://github.com/takemo101/cms-tool/issues",
                 "source": "https://github.com/takemo101/cms-tool/tree/v0.1.5"
             },
-            "time": "2024-08-26T08:09:55+00:00"
+            "time": "2024-08-26T12:57:46+00:00"
         },
         {
             "name": "tedivm/stash",
