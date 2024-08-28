@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82fb314beb8f1d36f65eb9c5105cfaef",
+    "content-hash": "ff5e7af87ce6b5feb73030efe48370ba",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -4809,16 +4809,16 @@
         },
         {
             "name": "takemo101/cms-tool",
-            "version": "v0.1.5",
+            "version": "v0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/takemo101/cms-tool.git",
-                "reference": "8620eb3225cd5fe8a67a5c3417f73433dbfb52ee"
+                "reference": "501f6eab52aa36bfccef73516e13ff6dc89fff10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/8620eb3225cd5fe8a67a5c3417f73433dbfb52ee",
-                "reference": "8620eb3225cd5fe8a67a5c3417f73433dbfb52ee",
+                "url": "https://api.github.com/repos/takemo101/cms-tool/zipball/501f6eab52aa36bfccef73516e13ff6dc89fff10",
+                "reference": "501f6eab52aa36bfccef73516e13ff6dc89fff10",
                 "shasum": ""
             },
             "require": {
@@ -4886,9 +4886,9 @@
             ],
             "support": {
                 "issues": "https://github.com/takemo101/cms-tool/issues",
-                "source": "https://github.com/takemo101/cms-tool/tree/v0.1.5"
+                "source": "https://github.com/takemo101/cms-tool/tree/v0.1.6"
             },
-            "time": "2024-08-26T12:57:46+00:00"
+            "time": "2024-08-28T14:59:59+00:00"
         },
         {
             "name": "tedivm/stash",
